@@ -207,12 +207,8 @@ a {
   z-index: 0;
 }
 
-#top-jumbotron-attendance {
-  background: url('../img/attending_background.jpg') center center no-repeat;
-  /*background      : no-repeat center center;*/
-  background-size: cover;
-  position: relative;
-  z-index: 0;
+#top-jumbotron-cfp.attending {
+  background: url('../img/attending_background.jpg') center 30% no-repeat;
 }
 
 #top-jumbotron-committee {
@@ -239,7 +235,6 @@ a {
   position: relative;
   z-index: 0;
 }
-
 
 #top-jumbotron-cfp {
   position: relative;
