@@ -598,11 +598,11 @@ table td {
 }
 
 .program-overview tr:nth-child(odd) {
-  background-color: #fefefe;
+  background-color: white;
 }
 
 .program-overview tr:nth-child(even) {
-  background-color: #f5f5fc;
+  background-color: white;
 }
 
 /*#content .program ul li ul li {
@@ -632,12 +632,26 @@ table td {
   font-weight: 700;
 }
 
-tr:nth-child(odd) {
-  background-color: #f5efe4;
+.callout_section_0 tr:nth-child(odd) {
+  background-color: #efeff0;
+}
+.callout_section_0 tr:nth-child(even) {
+  background-color: white;
 }
 
-tr:nth-child(even) {
-  background-color: #ffffff;
+.callout_section_0 thead tr:nth-child(1) {
+  background-color: white;
+}
+
+.callout_section_1 tr:nth-child(odd) {
+  background-color: white;
+}
+.callout_section_1 tr:nth-child(even) {
+  background-color: #efeff0;
+}
+
+.callout_section_1 thead tr:nth-child(1) {
+  background-color: #efeff0;
 }
 
 .track-name {
