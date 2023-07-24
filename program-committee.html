@@ -172,23 +172,23 @@
                     </div>
                     <div class="row justify-content-md-center">
                         <div class="col-lg-8 mt-4" id="experience_committee_members">
-                            <p class="committee_member_info"><strong>LouAnne Boyd, </strong><span style="color:#888;"><i>Chapman University, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Danielle Bragg, </strong><span style="color:#888;"><i>Microsoft Research, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Faustina Hwang, </strong><span style="color:#888;"><i>University of Reading, UK</i> </span></p>
-                            <p class="committee_member_info"><strong>Sushil	Oswal, </strong><span style="color:#888;"><i>University of Washington, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Abi Roper, </strong><span style="color:#888;"><i>University of London, UK</i> </span></p>
-                            <p class="committee_member_info"><strong>Daisuke Sato, </strong><span style="color:#888;"><i>Carnegie Mellon University, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Krishna Venkatasubramanian, </strong><span style="color:#888;"><i>University of Rhode Island, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Michele Williams, </strong><span style="color:#888;"><i>M.A.W. Consulting, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Yeliz	Yesilada, </strong><span style="color:#888;"><i>Middle East Technical University, Turkey</i> </span></p>
-                            <p class="committee_member_info"><strong>Rua Williams, </strong><span style="color:#888;"><i>Purdue University, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Venkatesh 	Potluri, </strong><span style="color:#888;"><i>University of Washington, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Ather Sharif, </strong><span style="color:#888;"><i>University of Washington, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Shaun Kane, </strong><span style="color:#888;"><i>Google, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Lynn Kirabo, </strong><span style="color:#888;"><i>Harvey Mudd College, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Vinitha Gadiraju, </strong><span style="color:#888;"><i>University of Colorado, USA</i> </span></p>
-                            <p class="committee_member_info"><strong>Uran Oh, </strong><span style="color:#888;"><i>Ewha Womans University, Republic of Korea</i> </span></p>
-                            <p class="committee_member_info"><strong>JooYoung Seo, </strong><span style="color:#888;"><i>University of Illinois Urbana-Champaign, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>LouAnne Boyd, </strong><span style="color:#888;"><i>Chapman University, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Danielle Bragg, </strong><span style="color:#888;"><i>Microsoft Research, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Faustina Hwang, </strong><span style="color:#888;"><i>University of Reading, UK</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Sushil	Oswal, </strong><span style="color:#888;"><i>University of Washington, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Abi Roper, </strong><span style="color:#888;"><i>University of London, UK</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Daisuke Sato, </strong><span style="color:#888;"><i>Carnegie Mellon University, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Krishna Venkatasubramanian, </strong><span style="color:#888;"><i>University of Rhode Island, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Michele Williams, </strong><span style="color:#888;"><i>M.A.W. Consulting, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Yeliz	Yesilada, </strong><span style="color:#888;"><i>Middle East Technical University, Turkey</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Rua Williams, </strong><span style="color:#888;"><i>Purdue University, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Venkatesh 	Potluri, </strong><span style="color:#888;"><i>University of Washington, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Ather Sharif, </strong><span style="color:#888;"><i>University of Washington, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Shaun Kane, </strong><span style="color:#888;"><i>Google, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Lynn Kirabo, </strong><span style="color:#888;"><i>Harvey Mudd College, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Vinitha Gadiraju, </strong><span style="color:#888;"><i>University of Colorado, USA</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>Uran Oh, </strong><span style="color:#888;"><i>Ewha Womans University, Republic of Korea</i> </span></p>
+                            <p class="experience_committee_member_info"><strong>JooYoung Seo, </strong><span style="color:#888;"><i>University of Illinois Urbana-Champaign, USA</i> </span></p>
 
                         </div>
                     </div>
@@ -211,7 +211,7 @@
                     var nameB = b.innerText.split(",")[0].split(" ").slice(-1)[0];
                     return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
                 });
-                var result2 = members2.sort(function (a, b) {
+                var result2 = experience_members.sort(function (a, b) {
 
                     var nameA = a.innerText.split(",")[0].split(" ").slice(-1)[0];
                     var nameB = b.innerText.split(",")[0].split(" ").slice(-1)[0];
