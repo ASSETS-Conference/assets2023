@@ -167,6 +167,15 @@ a {
   z-index: 2;
 }
 
+/* NAVBAR SECTION ------------------------------------------------------------------------------------------------ */
+
+#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
 #top-jumbotron::before {
@@ -384,8 +393,10 @@ a {
   text-align: center;
   background-color: #1f1f1f;
   background-size: cover;
-  position: relative;
   z-index: 0;
+  
+  position: relative;
+  
 }
 
 /* OTHER ---------------------------------------------------------------------------- */
