@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    let jumbotron_height = 277
+
     /* SIDEBAR */
     function place_sidebar(offset=275) {
         var target = $(".col-lg-8").first().offset().left - offset;
@@ -14,16 +16,16 @@ $( document ).ready(function() {
             });
         }
         $(".toc-div").css({
-            "left": target + "px"
+            "left": target + "px",
+            "top": jumbotron_height + "px"
         });
     }
 
     $(function () {
-        var offsetPixels = 277; // navbar height
         place_sidebar();
 
         $(window).scroll(function () {
-            if ($(window).scrollTop() > offsetPixels) {
+            if ($(window).scrollTop() > jumbotron_height) {
                 $(".toc-div").css({
                     "position": "fixed",
                     "top": "0px"
@@ -31,7 +33,7 @@ $( document ).ready(function() {
             } else {
                 $(".toc-div").css({
                     "position": "absolute",
-                    "top": "277px"
+                    "top": jumbotron_height + "px"
                 });
             }
         });
