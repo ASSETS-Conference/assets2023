@@ -494,11 +494,24 @@ table td {
   margin-bottom: 3rem;
   width: 100%;
   justify-content: center;
-  /* background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  width: 25rem;
-  margin-left: 28rem;
-  padding-left: 1.5rem; */
+}
+
+#details>div {
+  display: flex;
+  text-align: left;
+}
+
+#details>div:not(:last-child) {
+  margin-right: 2rem;
+}
+
+#details .emoji {
+  margin-right: .5rem;
+}
+
+#details ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 #details span {
@@ -529,6 +542,47 @@ table td {
   color: #d3d3d3;
 }
 
+.description h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 786px) {
+  #details {
+      font-size: 1.15rem;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lead {
+      font-size: 2rem;
+      line-height: 1.15rem;
+    }
+  
+    #details>div {
+      margin-right: 0 !important;
+    }
+
+    #details>.dates{
+      flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #details>.dates .emoji {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    #details>div, #details li {
+     
+      margin-bottom: 0.5rem;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
   .confTitle_landing {
     font-size: 3rem;
@@ -538,23 +592,12 @@ table td {
     font-size: 1.15rem;
   }
 
-  .lead {
-    font-size: 2rem;
-    line-height: 1.15rem;
-  }
 
   .description {
     padding: 1rem 2rem 0.5rem 1.5rem;
   }
 
-  #details {
-    font-size: 1.15rem;
-    flex-direction: column;
-  }
-
-  #details span {
-    padding-bottom: 0.5rem;
-  }
+ 
 }
 
 /*===============================================*/
