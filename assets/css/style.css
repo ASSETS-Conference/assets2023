@@ -429,6 +429,16 @@ h5 {
   /*width: 50%;*/
 }
 
+.imghotel-center {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 90%;
+  width: 80%;
+}
+
 /* BASIC TABLE ---------------------------------------------------------------------------- */
 
 table {
