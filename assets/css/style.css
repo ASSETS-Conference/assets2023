@@ -857,3 +857,74 @@ span button {
   hyphens: auto; */
 
 }
+
+/*===============================================*/
+/*             STYLES FOR NEW PROGRAM PAGEs           */
+/*===============================================*/
+
+.paper {
+  padding: 1.5rem;
+
+  /* see https://blog.logrocket.com/responsive-css-border-radius-fab-four-technique/ */
+  /* border-radius: max(0px, min(25px, (100% - 400px + 1px) * 9999)) / 25px; */
+
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+
+.paper:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.paper:last-child {
+  margin-bottom: 2rem;
+}
+
+.callout_section_1 .paper {
+  background-color: #fff; 
+}
+
+.callout_section_0 .paper {
+  background-color: #efeff0;
+}
+
+.program-date {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.session h3 {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.time {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.sticky-date, .sticky-heading {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  /* padding-left: 1rem !important; */
+}
+
+.sticky-date {
+  z-index: 99;
+}
+
+.sticky-heading {
+  z-index: 98;
+}
+
+.callout_section_1 .sticky-date,
+.callout_section_1 .sticky-heading {
+  background-color: #efeff0;
+}
+
+.callout_section_0 .sticky-date,
+.callout_section_0 .sticky-heading {
+  background-color: #fff;
+
+}
