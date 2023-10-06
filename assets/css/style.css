@@ -874,6 +874,18 @@ span button {
   flex-direction: column;
 }
 
+.session, .event {
+  border-top: #ced4da solid 1px;
+  margin-top: 1rem;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.session {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
 .paper .time {
   margin-top: .5rem;
   font-size: 1rem;
@@ -887,12 +899,24 @@ span button {
   margin-bottom: 2rem;
 }
 
+.event { 
+  margin-top: 1rem;
+}
+
+.event h3 {
+  margin-top: 2.5rem;
+}
+
+.paper h5 {
+  font-size: 1.5rem;
+}
+
 .callout_section_1 .paper {
   background-color: #fff; 
 }
 
 .callout_section_0 .paper {
-  background-color: #efeff0;
+  background-color: #f8f8f8;
 }
 
 .program-date {
@@ -900,7 +924,7 @@ span button {
   margin: 0;
 }
 
-.session h3 {
+.session h3, .event h3 {
   padding: 1rem 0;
   margin: 0;
 }
