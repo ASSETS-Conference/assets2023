@@ -1,6 +1,5 @@
-function set_sticky(query, sticky_class, offset = 0) {
+function set_sticky(scroll, query, sticky_class, offset = 0) {
     let elements = $(`${query}:not(.${sticky_class})`);
-    let scroll = $(window).scrollTop();
     let el_height = $(elements[0]).outerHeight();
 
     let locations = getStartingLocations(elements);
@@ -81,8 +80,41 @@ function setOffsets(elements, locations, sticky, sticky_index, scroll, x_offset)
     }
 }
 
+
+// from https://stackoverflow.com/questions/20791374/jquery-check-if-element-is-visible-in-viewport
+$.fn.isInViewport = function () {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+function setBackToTop(scroll) {
+    var stickyBackToTop = $(".sticky-back-to-top");
+    if (scroll > $('.program-overview').offset().top + $('.program-overview').height()) {
+        let backToTop = $(".program-back-to-top-wrapper");
+        stickyBackToTop.css("opacity", "1");
+    } else {
+        stickyBackToTop.css("opacity", "0");
+    }
+
+    let footer = $("#footer");
+    if (footer.isInViewport()) {
+        let offset = scroll + $(window).height() - footer.offset().top;
+        console.log(offset);
+        stickyBackToTop.css("bottom", `${offset}px`);
+    } else {
+        stickyBackToTop.css("bottom", "0");
+    }
+}
+
 $(window).scroll(function () {
-    date_offset = set_sticky(".program-date", "sticky-date");
-    set_sticky(".detailed-program h3", "sticky-heading", date_offset);
+    let scroll = $(window).scrollTop();
+    date_offset = set_sticky(scroll, ".program-date", "sticky-date");
+    set_sticky(scroll, ".detailed-program h3", "sticky-heading", date_offset);
+    setBackToTop(scroll);
 });
 
