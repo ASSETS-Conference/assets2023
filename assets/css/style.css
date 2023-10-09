@@ -625,14 +625,14 @@ table td {
 
 }
 
-.program-overview {
+/* .program-overview {
   text-align: left;
   vertical-align: top;
   border-collapse: collapse;
   max-width: 80%;
   margin: auto;
 
-}
+} */
 
 /* Table headers */
 .program-overview thead th {
