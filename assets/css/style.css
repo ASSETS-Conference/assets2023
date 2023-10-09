@@ -862,6 +862,36 @@ span button {
 /*             STYLES FOR NEW PROGRAM PAGEs           */
 /*===============================================*/
 
+.program-overview {
+  padding-bottom: 2rem;
+}
+
+.program-overview a {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.program-overview table {
+  /* table-layout: fixed; */
+  width: auto;
+}
+
+.program-overview table * {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.program-overview table td:first-child {
+  white-space: nowrap;
+  padding-right: 1rem;
+  min-width: 6rem;
+}
+
+.program-overview h3 {
+  margin-top: 2rem;
+}
+
 .paper {
   padding: 1.5rem;
 
@@ -936,8 +966,10 @@ span button {
 
 .sticky-date, .sticky-heading {
   position: fixed;
-  width: 100vw;
+  /* width: 100vw; */
+  max-width: 90vw;
   left: 0;
+  right: 0;
   /* padding-left: 1rem !important; */
 }
 

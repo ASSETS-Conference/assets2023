@@ -83,6 +83,6 @@ function setOffsets(elements, locations, sticky, sticky_index, scroll, x_offset)
 
 $(window).scroll(function () {
     date_offset = set_sticky(".program-date", "sticky-date");
-    set_sticky("h3", "sticky-heading", date_offset);
+    set_sticky(".detailed-program h3", "sticky-heading", date_offset);
 });
 
