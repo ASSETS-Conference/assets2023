@@ -990,5 +990,40 @@ span button {
 .callout_section_0 .sticky-date,
 .callout_section_0 .sticky-heading {
   background-color: #fff;
+}
 
+.program-back-to-top-wrapper {
+  width: 100%;
+  background-color: #efeff0;
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 0.5rem;
+}
+
+.sticky-back-to-top {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: opacity 500ms;
+  z-index: 99;
+}
+
+.program-back-to-top {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+}
+
+.program-back-to-top a {
+  background-color: #1f1f1f;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 25px;
+}
+
+@media (min-width: 992px) {
+  .program-back-to-top-wrapper {
+    justify-content: center;
+  }
 }
