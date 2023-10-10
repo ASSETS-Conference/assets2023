@@ -439,6 +439,14 @@ h5 {
   width: 80%;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;  
+}
+
 /* BASIC TABLE ---------------------------------------------------------------------------- */
 
 table {
@@ -636,7 +644,7 @@ table td {
 
 /* Table headers */
 .program-overview thead th {
-  background-color: #f5f5fc;
+  background-color: #efeff0;
 }
 
 .program-overview th {
@@ -659,14 +667,6 @@ table td {
   border-left: 2px solid #ececf9;
   border-right: 2px solid#ececf9;
   padding-left: 10px;
-}
-
-.program-overview tr:nth-child(odd) {
-  background-color: white;
-}
-
-.program-overview tr:nth-child(even) {
-  background-color: white;
 }
 
 /*#content .program ul li ul li {
@@ -697,10 +697,10 @@ table td {
 }
 
 .callout_section_0 tr:nth-child(odd) {
-  background-color: #efeff0;
+  background-color: white;
 }
 .callout_section_0 tr:nth-child(even) {
-  background-color: white;
+  background-color: #efeff0;
 }
 
 .callout_section_0 thead tr:nth-child(1) {
@@ -711,11 +711,11 @@ table td {
   background-color: white;
 }
 .callout_section_1 tr:nth-child(even) {
-  background-color: #efeff0;
+  background-color: white;
 }
 
 .callout_section_1 thead tr:nth-child(1) {
-  background-color: #efeff0;
+  background-color: white;
 }
 
 .track-name {
@@ -869,6 +869,7 @@ span button {
 .program-overview a {
   color: #000000;
   opacity: 0.6;
+  font-weight: 500;
 }
 
 .program-overview table {
