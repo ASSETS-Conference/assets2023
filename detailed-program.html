@@ -139,6 +139,11 @@
       .slider.round:before {
           border-radius: 50%;
       }
+      .toggle-container {
+        margin: auto;
+        padding-top: 1rem;
+        width: auto;
+      }
   </style>
   </head>
 
@@ -178,17 +183,25 @@
         <section class="callout_section_0 p-3">
           <div class="container">
           <div class="row justify-content-md-center">
-              <div class="section_wrapper">
-                  <div class="section_wrapper">
-
-          <h3 class="text-center mt-3" tabindex="0">ASSETS 2023 Program at a Glance</h3>
+            <h2 class="text-center mt-3" tabindex="0">ASSETS 2023 Program at a Glance</h2>
                     <!-- <p class="text-center"><strong>Please note: this schedule is still subject to change.</strong></p> -->
           <!-- Toggle Component -->
-          <label class="toggle-switch">
-            <input type="checkbox" id="customToggleSwitch">
-            <span class="slider round"></span>
-          </label>
-
+          <label class="toggle-container">
+            <span class="toggle-label">Table</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="customToggleSwitch">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">List</span>
+        </label>
+          </div>
+        </div>
+        </section>
+        <section class="callout_section_0 p-3 tableview">
+          <div class="container">
+          <div class="row justify-content-md-center">
+              <div class="section_wrapper">
+                  <div class="section_wrapper">
           <div class="table-responsive">
           <table class="program-overview small">
             <colgroup width="5%" />
@@ -200,7 +213,7 @@
               <tr>
                 <th class="h5" scope="col">Time</th>
                 <th class="h5" scope="col">Sunday, Oct 22 </th>
-                <th class="h5" scope="col"><b><a href="#monday" alt="Jump to Monday schedule">Monday, Oct 23</a></b></th>
+                <th class="h5" scope="col"><b><a href="#m845am" alt="Jump to Monday schedule">Monday, Oct 23</a></b></th>
                 <th class="h5" scope="col"><b><a href="#tuesday" alt="Jump to Tuesday schedule">Tuesday, Oct 24</a></b></th>
                 <th class="h5" scope="col"><b><a href="#wednesday" alt="Jump to Wednesday schedule">Wednesday, Oct 25</a></b></th>
               </tr>
@@ -209,47 +222,46 @@
               <tr>
                 <th scope="row">Morning</th>
                 <td>Doctoral Consortium</td>
-                <td>7:30 AM - 8:45 AM<br> Breakfast & Registration Desk Opens<br><br>
-                  8:45 AM - 9:00 AM<br> Welcome<br><br>
-                  9:00 AM - 10:00 AM<br> Opening Keynote<br><br>
-                  10:00 AM - 11:10 AM<br> Coffee Break & <a href="poster-session-1.html" target="_blank" alt="Jump to Poster Session 1 schedule">Poster Session 1</a><br><br>
-                  11:10 AM - 12:25 PM<br> <a href="#session1-link" alt="Jump to Session 1 schedule">Paper Session 1</a></td>
-                <td>7:30 AM - 8:45 AM<br> Breakfast & Registration Desk Opens<br><br>
-                  8:45 AM - 10:00 AM<br> <a href="#session4-link" alt="Jump to Session 4 schedule">Paper Session 4</a><br><br>
-                  10:00 AM - 11:10 AM<br> Coffee Break & <a href="poster-session-2.html" target="_blank" alt="Jump to Poster Session 2 schedule">Poster Session 2</a><br><br>
-                  11:10 AM - 12:25 PM<br> <a href="#session5-link" alt="Jump to Session 5 schedule">Paper Session 5</a></span></td>
-                <td>7:30 AM - 8:45 AM<br> Breakfast<br><br>
-                  8:45 AM - 10:00 AM<br> <a href="#session8-link" alt="Jump to Session 8 schedule">Paper Session 8</a><br><br>
-                  10:00 AM - 11:10 AM<br> Coffee Break <br><br>
-                  11:10 AM - 12:25 PM<br> <a href="#session5-link" alt="Jump to Session 5 schedule">Paper Session 9</a></span></td>
+                <td>7:30 - 8:45 AM<br> Breakfast & Registration Desk Opens<br><br>
+                  8:45 - 10:00 AM<br> Welcome & Opening Keynote<br><br>
+                  10:00 - 11:10 AM<br> Coffee Break & <a href="#m10am" alt="Jump to Poster Session 1 schedule">Poster Session 1</a><br><br>
+                  11:10 - 12:25 PM<br> <a href="#m1110am" alt="Jump to Session 1 schedule">Paper Session 1</a></td>
+                <td>7:30 - 8:45 AM<br> Breakfast & Registration Desk Opens<br><br>
+                  8:45 - 10:00 AM<br> <a href="#t845am" alt="Jump to Session 4 schedule">Paper Session 4</a><br><br>
+                  10:00 - 11:10 AM<br> Coffee Break & <a href="#t10am" alt="Jump to Poster Session 2 schedule">Poster Session 2</a><br><br>
+                  11:10 AM - 12:25 PM<br> <a href="#t1110am" alt="Jump to Session 5 schedule">Paper Session 5</a></span></td>
+                <td>7:30 - 8:45 AM<br> Breakfast<br><br>
+                  8:45 - 10:00 AM<br> <a href="#w845am" alt="Jump to Session 8 schedule">Paper Session 8</a><br><br>
+                  10:00 - 11:10 AM<br> Coffee Break <br><br>
+                  11:10 AM - 12:25 PM<br> <a href="#w1110am" alt="Jump to Session 9 schedule">Paper Session 9</a></span></td>
                   
               </tr>
               <tr>
                 <th scope="row">Lunch</th>
                 <td></td>
-                <td>12:25 PM - 1:40 PM<br> Lunch</td>
-                <td>12:25 PM - 1:40 PM<br> Lunch</td>
-                <td>12:30 PM - 1:25 PM<br> Lunch</td>
+                <td>12:25 - 1:40 PM<br> Lunch</td>
+                <td>12:25 - 1:40 PM<br> Lunch</td>
+                <td>12:30 - 1:25 PM<br> Lunch</td>
               </tr>
               <tr>
                 <th scope="row">Afternoon</th>
                 <td>Doctoral Consortium</td>
-                <td>1:40 PM - 2:55 PM<br> <a href="#session2-link" alt="Jump to Session 2 schedule">Paper Session 2</a><br><br>
-                  2:55 PM - 4:00 PM<br> Coffee Break and <a href="poster-session-1.html" target="_blank" alt="Jump to Poster Session 1 schedule">Poster Session 1</a><br><br>
-                  4:00 PM - 4:50 PM<br> <a href="#session3-link" alt="Jump to Session 3 schedule">Paper Session 3</a> <br><br>
-                  4:50 PM - 5:20 PM<br> <a href="#src-link" alt="Jump to Student Research Competition schedule">Student Research Competition Finalist Presentations</a></td>
-                <td>1:40 PM - 2:55 PM<br> <a href="#session6-link" alt="Jump to Session 6 schedule">Paper Session 6</a></span><br><br>
-                  2:55 PM - 4:00 PM<br> Coffee Break and <a href="poster-session-2.html" target="_blank" alt="Jump to Poster Session 2 schedule">Poster Session 2</a><br><br>
-                  4:00 PM - 5:20 PM<br> <a href="#session7-link" alt="Jump to Session 7 schedule">Paper Session 7</a></td>
-                <td>1:25 PM - 2:40 PM<br> <a href="#session10-link" alt="Jump to Session 10 schedule">Paper Session 10</a><br><br>
-                  2:40 PM - 2:55 PM<br> Break<br><br>
-                  2:55 PM - 4:00 PM<br> <a href="#session11-link" alt="Jump to Session 11 schedule">Paper Session 11</a></span><br><br>
-                  4:00 PM - 5:20 PM<br> Closing Plenary</td>
+                <td>1:40 - 2:55 PM<br> <a href="#m140pm" alt="Jump to Session 2 schedule">Paper Session 2</a><br><br>
+                  2:55 - 4:00 PM<br> Coffee Break and <a href="#m255pm" alt="Jump to Poster Session 1 schedule">Poster Session 1</a><br><br>
+                  4:00 - 4:50 PM<br> <a href="#m4pm" alt="Jump to Session 3 schedule">Paper Session 3</a> <br><br>
+                  4:50 - 5:20 PM<br> <a href="#m450pm" alt="Jump to Student Research Competition schedule">Student Research Competition Finalist Presentations</a></td>
+                <td >1:40 - 2:55 PM<br> <a href="#t140pm" alt="Jump to Session 6 schedule">Paper Session 6</a></span><br><br>
+                  2:55 - 4:00 PM<br> Coffee Break and <a href="#t255pm" alt="Jump to Poster Session 2 schedule">Poster Session 2</a><br><br>
+                  4:00 - 5:20 PM<br> <a href="#t4pm" alt="Jump to Session 7 schedule">Paper Session 7</a></td>
+                <td>1:25 - 2:40 PM<br> <a href="#w125pm" alt="Jump to Session 10 schedule">Paper Session 10</a><br><br>
+                  2:40 - 2:55 PM<br> Break<br><br>
+                  2:55 - 4:00 PM<br> <a href="#w255pm" alt="Jump to Session 11 schedule">Paper Session 11</a></span><br><br>
+                  4:00 - 5:20 PM<br> Closing Plenary</td>
               </tr>
               <tr>
                 <th scope="row">Evening</th>
                 <td>Registration Desk Opens</td>
-                <td>Evening Reception and <a href="demo-session.html" target="_blank" alt="Jump to Demo Session schedule">Demo Session</a></td>
+                <td>Evening Reception and <a href="demo-session.html" alt="Jump to Demo Session schedule">Demo Session</a></td>
                 <td>SIGACCESS Town Hall<br><br>
                   Reception</td>
                 <td></td>
@@ -257,76 +269,74 @@
             </tbody>
           </table>
           </div>
+          </div>
+          </div>
+        </div>
+      </div>
+        </section>
+          <section class="callout_section_0 p-3 listview" style="display: none;" >
+            <div class="container">
+            <div class="row justify-content-md-center">
+          <div class="col-lg-8 program-overview" >
+            <h3>Sunday, Oct 22 </h3>
+            <table>
+              <tr><th>Time</th><th>Event</th></tr>
+              <tr><td>Morning</td> <td><a href="">Doctoral Consortium</a></td></tr>
+              <tr><td>Afternoon</td> <td><a href="">Doctoral Consortium</a></td></tr>
+              <tr><td>Evening</td> <td>Registration Desk Opens</td></tr>
+            </table>
+            <h3>Monday, Oct 23 </h3>
+            <table>
+                <tr><th>Time</th><th>Event</th></tr>
+                <tr><td>7:30 AM</td> <td>Breakfast and Registration Desk Opens</td></tr>
+                <tr><td>8:45 AM</td> <td><a href="#m845am">Welcome</a></td></tr>
+                <tr><td>9:00 AM</td> <td><a href="#m9am">Opening Keynote</a></td></tr>
+                <tr><td>10:00 AM</td> <td><a href="#m10am">Coffee Break and Poster Session 1</a> </td></tr>
+                <tr><td>11:10 AM</td>  <td><a href="#m1110am">Paper Session 1</a></td></tr>
+                <tr><td>12:25 PM</td> <td>Lunch</td></tr>
+                <tr><td>1:40 PM</td> <td><a href="#m140pm">Paper Session 2</a></td> </tr>
+                <tr><td>2:55 PM</td> <td><a href="#m255pm">Coffee Break and Poster Session 1</a></td></tr>
+                <tr><td>4:00 PM</td> <td><a href="#m4pm">Paper Session 3</a></td></tr>
+                <tr><td>4:50 PM</td><td><a href="#m450pm">Student Research Competition Finatrst Presentations</a></td></tr>
+                
+                <tr><td>Evening</td> <td><a href="#mevening">Welcome Reception and Demo Session</a></td></strong></tr>
+              </table>
+            <h3>Tuesday, Oct 24</h3>
+            <table>
+                <tr><th>Time</th><th>Event</th></tr>
+                <tr><td>7:30 AM</td> <td>Breakfast</td></tr>
+                <tr><td>8:00 AM</td> <td><a href="#t8am">Registration Desk Opens</a></td></tr>
+                <tr><td>8:45 AM</td> <td><a href="#t845am">Paper Session 4</a></td></tr>
+                <tr><td>10:00 AM</td> <td><a href="#t10am">Coffee Break and Poster Session 2</a></td> </strong></tr>
+                <tr><td>11:10 AM </td><td><a href="#t1110am">Paper Session 5</a></td></tr>
+                <tr><td>12:25 PM</td> <td>Lunch</td></tr>
+                <tr><td>1:40 PM</td> <td><a href="#t140pm">Paper Session 6</a></td> </tr>
+                <tr><td>2:55 PM</td> <td><a href="#t255pm">Coffee Break and Poster Session 2</a></td></tr>
+                <tr><td>4:00 PM</td> <td><a href="#t4pm">Paper Session 7</a></td></tr>
+                <tr><td>5:30 PM </td><td><a href="#t530pm">SIGACCESS Town Hall</a> </td></tr>
+                <tr><td>Evening</td> <td><a href="#tevening">Reception</a></td> </tr>
+            </table>
+            <h3>Wednesday, Oct 25</h3>
+            <table>
+                <tr><th>Time</th><th>Event</th></tr>
+                <tr><td>7:30 AM</td> <td>Breakfast</td>  </tr>
+                <tr><td>8:45 AM</td> <td><a href="#w845am">Paper Session 8</a></td></tr>
+                <tr><td>10:00 AM</td> <td><a href="#w10am">Coffee Break</a></td> </tr>
+                <tr><td>11:10 AM</td><td> <a href="#w1110am">Paper Session 9</a></td></tr>
+                <tr><td>12:25 PM</td><td> Lunch</td></tr>
+                <tr><td>1:25 PM</td> <td><a href="#w125pm">Paper Session 10</a></td> </tr>
+                <tr><td>2:40 PM</td>  <td>Break</td></tr>
+                
+                <tr><td>2:55 PM</td> <td><a href="#w255pm">Paper Session 11</a></td></tr>
+                <tr><td>4:00 PM</td> <td>Closing Plenary</td></tr>
+                
+            </table>
+          </div>
                   </div>
               </div>
-          </div>
-          </div>
       </section>
 
         <!-- Content -->
-        <section class="callout_section_0 p-3">
-          <div class="container">
-            <div class="row justify-content-md-center">
-              <div class="col-lg-8 mt-4 program-overview">
-                <h2>Conference Overview</h2>
-                <h3>Sunday, Oct 22 </h3>
-                <table>
-                  <tr><th>Time</th><th>Event</th></tr>
-                  <tr><td>Morning</td> <td><a href="">Doctoral Consortium</a></td></tr>
-                  <tr><td>Afternoon</td> <td><a href="">Doctoral Consortium</a></td></tr>
-                  <tr><td>Evening</td> <td>Registration Desk Opens</td></tr>
-                </table>
-                <h3>Monday, Oct 23 </h3>
-                <table>
-                    <tr><th>Time</th><th>Event</th></tr>
-                    <tr><td>7:30 AM</td> <td>Breakfast and Registration Desk Opens</td></tr>
-                    <tr><td>8:45 AM</td> <td><a href="#m845am">Welcome</a></td></tr>
-                    <tr><td>9:00 AM</td> <td><a href="#m9am">Opening Keynote</a></td></tr>
-                    <tr><td>10:00 AM</td> <td><a href="#m10am">Coffee Break and Poster Session 1</a> </td></tr>
-                    <tr><td>11:10 AM</td>  <td><a href="#m1110am">Paper Session 1</a></td></tr>
-                    <tr><td>12:25 PM</td> <td>Lunch</td></tr>
-                    <tr><td>1:40 PM</td> <td><a href="#m140pm">Paper Session 2</a></td> </tr>
-                    <tr><td>2:55 PM</td> <td><a href="#m255pm">Coffee Break and Poster Session 1</a></td></tr>
-                    <tr><td>4:00 PM</td> <td><a href="#m4pm">Paper Session 3</a></td></tr>
-                    <tr><td>4:50 PM</td><td><a href="#m450pm">Student Research Competition Finatrst Presentations</a></td></tr>
-                    
-                    <tr><td>Evening</td> <td><a href="#mevening">Welcome Reception and Demo Session</a></td></strong></tr>
-                  </table>
-                <h3>Tuesday, Oct 24</h3>
-                <table>
-                    <tr><th>Time</th><th>Event</th></tr>
-                    <tr><td>7:30 AM</td> <td>Breakfast</td></tr>
-                    <tr><td>8:00 AM</td> <td><a href="#t8am">Registration Desk Opens</a></td></tr>
-                    <tr><td>8:45 AM</td> <td><a href="#t845am">Paper Session 4</a></td></tr>
-                    <tr><td>10:00 AM</td> <td><a href="#t10am">Coffee Break and Poster Session 2</a></td> </strong></tr>
-                    <tr><td>11:10 AM </td><td><a href="#t1110am">Paper Session 5</a></td></tr>
-                    <tr><td>12:25 PM</td> <td>Lunch</td></tr>
-                    <tr><td>1:40 PM</td> <td><a href="#t140pm">Paper Session 6</a></td> </tr>
-                    <tr><td>2:55 PM</td> <td><a href="#t255pm">Coffee Break and Poster Session 2</a></td></tr>
-                    <tr><td>4:00 PM</td> <td><a href="#t4pm">Paper Session 7</a></td></tr>
-                    <tr><td>5:30 PM </td><td><a href="#t530pm">SIGACCESS Town Hall</a> </td></tr>
-                    <tr><td>Evening</td> <td><a href="#tevening">Reception</a></td> </tr>
-                </table>
-                <h3>Wednesday, Oct 25</h3>
-                <table>
-                    <tr><th>Time</th><th>Event</th></tr>
-                    <tr><td>7:30 AM</td> <td>Breakfast</td>  </tr>
-                    <tr><td>8:45 AM</td> <td><a href="#w845am">Paper Session 8</a></td></tr>
-                    <tr><td>10:00 AM</td> <td><a href="#w10am">Coffee Break</a></td> </tr>
-                    <tr><td>11:10 AM</td><td> <a href="#w1110am">Paper Session 9</a></td></tr>
-                    <tr><td>12:25 PM</td><td> Lunch</td></tr>
-                    <tr><td>1:25 PM</td> <td><a href="#w125pm">Paper Session 10</a></td> </tr>
-                    <tr><td>2:40 PM</td>  <td>Break</td></tr>
-                    
-                    <tr><td>2:55 PM</td> <td><a href="#w255pm">Paper Session 11</a></td></tr>
-                    <tr><td>4:00 PM</td> <td>Closing Plenary</td></tr>
-                    
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <div class="detailed-program">
         <section class="callout_section_1 p-3">
           <div class="container">
@@ -1357,8 +1367,8 @@
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.getElementById('customToggleSwitch').addEventListener('change', function() {
-          const tableDiv = document.querySelector('.table-responsive');
-          const listDiv = document.querySelector('.callout_section_0.p-3');
+          const tableDiv = document.querySelector('.callout_section_0.p-3.tableview');
+          const listDiv = document.querySelector('.callout_section_0.p-3.listview');
   
           if (this.checked) {
               tableDiv.style.display = 'none';
