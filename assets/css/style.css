@@ -896,7 +896,9 @@ span button {
   padding: 0;
 }
 
-.program-overview table td:first-child {
+
+
+.program-overview table tbody th {
   white-space: nowrap;
   padding-right: 1rem;
   min-width: 6rem;
@@ -916,6 +918,14 @@ span button {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.listview table th {
+  padding-top: 0;
+}
+
+.listview table thead th {
+  background-color: #fff;
 }
 
 .session, .event {
