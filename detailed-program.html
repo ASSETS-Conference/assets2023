@@ -187,12 +187,18 @@
                     <!-- <p class="text-center"><strong>Please note: this schedule is still subject to change.</strong></p> -->
           <!-- Toggle Component -->
           <label class="toggle-container">
-            <span class="toggle-label">Table</span>
+            <span class="toggle-label">Table view</span>
             <label class="toggle-switch">
-                <input type="checkbox" id="customToggleSwitch">
+                <input 
+                    type="checkbox" 
+                    id="customToggleSwitch" 
+                    role="switch" 
+                    aria-checked="false" 
+                    aria-labelledby="toggleDescription"
+                    onchange="updateAriaAttributes()">
                 <span class="slider round"></span>
             </label>
-            <span class="toggle-label">List</span>
+            <span id="toggleDescription">List view</span>
         </label>
           </div>
         </div>
@@ -1384,6 +1390,18 @@
               listDiv.style.display = 'none';
           }
       });
+      function updateAriaAttributes() {
+        const checkbox = document.getElementById('customToggleSwitch');
+        const label = document.getElementById('toggleDescription');
+
+        if (checkbox.checked) {
+            checkbox.setAttribute('aria-checked', 'true');
+            label.innerText = 'List view';
+        } else {
+            checkbox.setAttribute('aria-checked', 'false');
+            label.innerText = 'Table view';
+        }
+    }
   </script>
   </body>
 </html>
