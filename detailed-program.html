@@ -189,19 +189,19 @@
             <h1 class="text-center mt-3" tabindex="0">ASSETS 2023 Program at a Glance*</h1>
                     <!-- <p class="text-center"><strong>Please note: this schedule is still subject to change.</strong></p> -->
           <!-- Toggle Component -->
-          <label class="toggle-container">
-            <span class="toggle-label">Table view</span>
+          <<label class="toggle-container">
+            <span class="toggle-label" id="tableViewLabel">Table View</span>
             <label class="toggle-switch">
                 <input 
                     type="checkbox" 
                     id="customToggleSwitch" 
                     role="switch" 
                     aria-checked="false" 
-                    aria-labelledby="toggleDescription"
-                    onchange="updateAriaAttributes()">
+                    aria-labelledby="tableViewLabel"
+                    onchange="updateAriaLabel()">
                 <span class="slider round"></span>
             </label>
-            <span id="toggleDescription">List view</span>
+            <span class="toggle-label" id="listViewLabel">List View</span>
         </label>
           </div>
         </div>
@@ -1433,16 +1433,13 @@
               listDiv.style.display = 'none';
           }
       });
-      function updateAriaAttributes() {
+      function updateAriaLabel() {
         const checkbox = document.getElementById('customToggleSwitch');
-        const label = document.getElementById('toggleDescription');
 
         if (checkbox.checked) {
-            checkbox.setAttribute('aria-checked', 'true');
-            label.innerText = 'List view';
+            checkbox.setAttribute('aria-labelledby', 'listViewLabel');
         } else {
-            checkbox.setAttribute('aria-checked', 'false');
-            label.innerText = 'Table view';
+            checkbox.setAttribute('aria-labelledby', 'tableViewLabel');
         }
     }
   </script>
