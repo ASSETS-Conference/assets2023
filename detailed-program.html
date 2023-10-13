@@ -147,6 +147,16 @@
         padding-top: 1rem;
         width: auto;
       }
+      .visually-hidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
   </style>
   </head>
 
@@ -189,19 +199,17 @@
             <h1 class="text-center mt-3" tabindex="0">ASSETS 2023 Program at a Glance*</h1>
                     <!-- <p class="text-center"><strong>Please note: this schedule is still subject to change.</strong></p> -->
           <!-- Toggle Component -->
-          <<label class="toggle-container">
-            <span class="toggle-label" id="tableViewLabel">Table View</span>
+          <label class="toggle-container">
+            <span class="toggle-label" id="tableViewLabel" aria-hidden="true">Table View</span>
             <label class="toggle-switch">
                 <input 
                     type="checkbox" 
                     id="customToggleSwitch" 
-                    role="switch" 
-                    aria-checked="false" 
-                    aria-labelledby="tableViewLabel"
-                    onchange="updateAriaLabel()">
+                    onchange="updateHiddenText()">
                 <span class="slider round"></span>
             </label>
-            <span class="toggle-label" id="listViewLabel">List View</span>
+            <span class="toggle-label" id="listViewLabel" aria-hidden="true">List View</span>
+            <span class="visually-hidden" id="statusText">Table view</span>
         </label>
           </div>
         </div>
@@ -1433,13 +1441,14 @@
               listDiv.style.display = 'none';
           }
       });
-      function updateAriaLabel() {
+      function updateHiddenText() {
         const checkbox = document.getElementById('customToggleSwitch');
+        const statusText = document.getElementById('statusText');
 
         if (checkbox.checked) {
-            checkbox.setAttribute('aria-labelledby', 'listViewLabel');
+            statusText.innerText = 'List view';
         } else {
-            checkbox.setAttribute('aria-labelledby', 'tableViewLabel');
+            statusText.innerText = 'Table view';
         }
     }
   </script>
