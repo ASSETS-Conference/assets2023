@@ -696,25 +696,7 @@ table td {
   font-weight: 700;
 }
 
-.callout_section_0 tr:nth-child(odd) {
-  background-color: white;
-}
-.callout_section_0 tr:nth-child(even) {
-  background-color: #efeff0;
-}
-
-.callout_section_0 thead tr:nth-child(1) {
-  background-color: white;
-}
-
-.callout_section_1 tr:nth-child(odd) {
-  background-color: white;
-}
-.callout_section_1 tr:nth-child(even) {
-  background-color: white;
-}
-
-.callout_section_1 thead tr:nth-child(1) {
+.callout_section_0 {
   background-color: white;
 }
 
@@ -722,6 +704,37 @@ table td {
   color: #7b3f8a;
   /*855e8f*/
   /*#65446D;*/
+}
+
+.tr-bottom-border {
+  border-bottom: #ececf9 solid 1px;
+}
+
+.tr-gray {
+  background-color: #efeff0;
+}
+
+.table-responsive .program-overview td {
+  min-width: 10rem;
+}
+
+.td-with-buffer {
+  background-color: #fff;
+  padding: 0;
+  padding-left: 0 !important;
+  /* fake height so that the .td-buffered can fill it if needed */
+  height: 1px;
+}
+
+.td-buffered {
+  background-color: #efeff0;
+  /* make this smaller to leave gap */
+  height: 100%;
+  padding: 5px 15px 0 10px;
+}
+
+.td-offset {
+  padding-top: 20px;
 }
 
 .back-to-top {
@@ -883,7 +896,9 @@ span button {
   padding: 0;
 }
 
-.program-overview table td:first-child {
+
+
+.program-overview table tbody th {
   white-space: nowrap;
   padding-right: 1rem;
   min-width: 6rem;
@@ -903,6 +918,14 @@ span button {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.listview table th {
+  padding-top: 0;
+}
+
+.listview table thead th {
+  background-color: #fff;
 }
 
 .session, .event {
