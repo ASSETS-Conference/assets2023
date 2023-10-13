@@ -200,16 +200,17 @@
                     <!-- <p class="text-center"><strong>Please note: this schedule is still subject to change.</strong></p> -->
           <!-- Toggle Component -->
           <label class="toggle-container">
+            <!-- <span class="visually-hidden" id="statusText0">Table view</span> -->
             <span class="toggle-label" id="tableViewLabel" aria-hidden="true">Table View</span>
-            <label class="toggle-switch">
+            <label class="toggle-switch" >
                 <input 
                     type="checkbox" 
                     id="customToggleSwitch" 
                     onchange="updateHiddenText()">
                 <span class="slider round"></span>
             </label>
+            <span class="visually-hidden" id="statusText">Currently it's table view</span>
             <span class="toggle-label" id="listViewLabel" aria-hidden="true">List View</span>
-            <span class="visually-hidden" id="statusText">Table view</span>
         </label>
           </div>
         </div>
@@ -1446,9 +1447,9 @@
         const statusText = document.getElementById('statusText');
 
         if (checkbox.checked) {
-            statusText.innerText = 'List view';
+            statusText.innerText = 'Currently its list view';
         } else {
-            statusText.innerText = 'Table view';
+            statusText.innerText = 'Currently its table view';
         }
     }
   </script>
