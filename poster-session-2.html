@@ -10,14 +10,14 @@
     <!-- Meta data -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ASSETS 2023 official website | Program Committee">
-    <meta name="keywords" content="ASSETS 2023, ASSETS'23, SIGACCESS, Program Committee, PC">
+    <meta name="description" content="ASSETS 2023 official website | Poster Session 2">
+    <meta name="keywords" content="ASSETS 2023, ASSETS'23, SIGACCESS, Poster Session">
     <meta name="author" content="">
     <meta name="generator" content="">
 
     <!-- Metadata tags for link preview -->
     <meta property="og:type" content="website" />
-    <meta name="title" property="og:title" content="ASSETS 2023 | Program Committee" />
+    <meta name="title" property="og:title" content="ASSETS 2023 | Poster Session 2" />
     <meta name="image" property="og:image" content="https://assets23.sigaccess.org/assets/img/large/ASSETS2023_Logo.png" />
     <meta name="og:title" content="ASSETS 2023 | The 25th International ACM SIGACCESS Conference on Computers and Accessibility" />
     <meta name="og:image" content="https://assets23.sigaccess.org/assets/img/large/ASSETS2023_Logo.png" />
@@ -32,16 +32,17 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/navbar.css" rel="stylesheet">
-    <link href="../assets/css/committees.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <link href="./assets/css/committees.css" rel="stylesheet">
+    <link href="./assets/css/logo.css" rel="stylesheet" />
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/zmi2bzm.css">
@@ -60,7 +61,7 @@
         <div id="navbar"></div>
         <script>
         $(function(){
-          $("#navbar").load("../navbar.html");
+          $("#navbar").load("./navbar.html");
         });
         </script>
         <!--Navigation bar-->
@@ -68,20 +69,23 @@
         <div id="content">
 
         <!-- Jumbotron -->
-        <!-- TODO: Replace jumbotron committee in CSS with NEW BANNER-->
-        <div id="top-jumbotron-cfp" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper">
-            <div class="container px-4 py-5 text-center content">
-                <span class="d-flex justify-content-center align-items-center mt-5">
-                    <!-- TODO: Replace with new logo-->
-                    <img class="d-block my-0 mx-4" src="../assets/img/large/logo-large.png" alt="ASSETS'23 logo" width="125">
-                    <!-- <h1 class="display-4 confTitle mt-4 mb-0 mx-1">ASSETS 2023</h1> --> 
-                    <div>
-                        <h1 class="display-6 confTitle mt-4 mb-0">Program</h1>
-                        <!-- TODO: Replace with date-->
-                        <h5 class="confTitle">TBD</h5>
-                    </div>
-                </span>
-            </div>
+        <div
+          id="top-jumbotron-cfp"
+          class="jumbotron jumbotron-fluid text-light image-wrapper"
+        >
+          <div class="container px-4 py-4 text-center content">
+            <span
+              class="d-block justify-content-center align-items-center mt-5"
+            >
+              <div class="logo-wrapper tiles-only">
+                <script src="assets/js/logo.js"></script>
+              </div>
+              <div>
+                <h1 class="display-6 confTitle mt-4 mb-0">Program</h1>
+                <h5 class="confTitle">October 23-25, 2023</h5>
+              </div>
+            </span>
+          </div>
         </div>
         <!-- Jumbotron -->
 
@@ -89,17 +93,17 @@
             <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-8 mt-4">
-                    <h3 class="text-center" tabindex="0">Poster Session 1</h3>
-                    <p>Jump to the Session Schedule for:</p>
+                    <h3 class="text-center" tabindex="0">Poster Session 2</h3>
+                    <!-- <p>Jump to the Session Schedule for:</p>
                     
                     <ul>
                         <li><b><a href="#posters">Posters</a></b></li>
                         <li><b><a href="#sponsor-booth">Sponsor Booth</a></b></li>
                         <li><b><a href="#src-posters">Student Research Competition Posters</a></b></li>
                         <li><b><a href="#dc-posters">Doctoral Consortium Posters</a></b></li>
-                    </ul>
+                    </ul> -->
 
-                    <p>Jump back to <a href="program.html"><b>Full Program</b></a></p>
+                    <p>Jump back to <a href="detailed-program.html"><b>Full Program</b></a></p>
 
                 </div>
             </div>
@@ -112,18 +116,88 @@
             <div class="row justify-content-md-center">
                 <div class="col-lg-8 mt-4">
                     <h3 class="text-center" tabindex="0">Posters</h3>
-                    <b>"I Should Feel Like I'm In Control": Understanding Expectations, Concerns, and Motivations for the Use of Autonomous Navigation on Wheelchairs</b>
+                    <b>U.S. Deaf Community Perspectives on Automatic Sign Language 
+                        Translation</b>
                     <ul class="authors">
-                        <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li>
-                        <li>Yunzhi Li, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li>
-                        <li>Patrick Carrington, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li>
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
                     </ul>
-                    <b>(virtual) "What Makes Sonification User-Friendly?" Exploring Usability and User-Friendliness of Sonified Responses</b>
+                    <b>Towards Street Camera-based Outdoor Navigation for Blind 
+                        Pedestrians</b>
                     <ul class="authors">
-                        <li>Ather Sharif, Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, Washington, United States</li>
-                        <li>Olivia Wang, Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, Washington, United States</li>
-                        <li>Alida Muongchan, Human Centered Design and Engineering, University of Washington, Seattle, Washington, United States</li>
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
                     </ul>
+                    <b>Approaches to Making Live Code Accessible in a Mixed-Vision Music 
+                        Ensemble</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>"Let the Volcano Erupt!": Designing Sonification to Make 
+                        Oceanography 
+                        Accessible for Blind and Low Vision Students in Museum 
+                        Environment</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Exploring Roundabout Navigation Training with 3D-Printed Tactile 
+                        Maps</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Starting well on design for accessibility: analysis of W3C’s 167 
+                        accessibility evaluation tools for the design phase</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Multimodal 3D printed urban maps for blind people. Evaluations and
+                        scientific investigations</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Understanding Blind and Low Vision Users’ Attitudes Towards 
+                        Spatial Interactions in Desktop Screen Readers</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Understanding the Experiences, Challenges, and Needs of 
+                        Dementia Caregivers in the Indian Subcontinent</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Proposing Body Doubling as a Continuum of Space/Time and 
+                        Mutuality: An Investigation with Neurodivergent Participants</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>FingerSpeller: Camera-Free Text Entry Using Smart Rings for 
+                        American Sign Language Fingerspelling Recognition</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>A Parametric Design Tool to Support Customized Adaptations of 
+                        Assistive Technologies for People with Hand Impairments</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>"It’s All About the Pictures": Understanding How Parents/Guardians 
+                        With Visual Impairments Co-Read With Their Child(ren)</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Designing a Human-Centered Intelligent System to Monitor & 
+                        Explain Abnormal Patterns of Older Adults</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Investigating Deaf and Hard-of-Hearing (DHH) Individuals’ Online 
+                        Dating Practices, Self-Presentation, and Disability Disclosure</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
+                    <b>Towards a System Architecture for Connected Physical and Digital 
+                        Reminders Using Embodied Objects for People with Dementia</b>
+                    <UL CLASS="AUTHORS">
+                        <!-- <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li> -->
+                    </UL>
                     
                 </div>
             </div>
@@ -131,7 +205,7 @@
         </section>
 
         <!-- TODO: Fill out with sponsor information -->
-        <section class="callout_section_0 p-3" id="sponsor-booth">
+        <!-- <section class="callout_section_0 p-3" id="sponsor-booth">
             <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-8 mt-4">
@@ -140,10 +214,10 @@
                 </div>
             </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- TODO: Fill out with student research competition -->
-        <section class="callout_section_1 p-3" id="src-posters">
+        <!-- <section class="callout_section_1 p-3" id="src-posters">
             <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-8 mt-4">
@@ -153,17 +227,16 @@
                     </div>
             </div>
             </div>
-        </section>
+        </section> -->
 
 
         <!-- TODO: Fill out with doctoral consortium posters information -->
-        <section class="callout_section_2 p-3" id="dc-posters">
+        <!-- <section class="callout_section_2 p-3" id="dc-posters">
             <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-8 mt-4">
                     <h3 class="text-center" tabindex="0">Doctoral Consortium Posters</h3>
                     
-                    <!-- TODO: Fill out with mentors -->
                     <h3>Mentors</h3>
                     <ul>
                         <li>Cynthia Bennett</li>
@@ -176,11 +249,11 @@
                     
 
                     <br>
-                    <p>[Jump back to <a href="program.html"><b>Full Program</b></a>]</p>
+                    <p>[Jump back to <a href="detailed-program.html"><b>Full Program</b></a>]</p>
                 </div>
             </div>
             </div>
-        </section>
+        </section> -->
 
         <div id="footer"></div>
         <script>

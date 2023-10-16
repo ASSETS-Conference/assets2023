@@ -32,12 +32,13 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/navbar.css" rel="stylesheet">
-    <link href="../assets/css/committees.css" rel="stylesheet">
+    <link href="./assets/css/style.css?version=202310102" rel="stylesheet" />
+    <link href="./assets/css/navbar.css" rel="stylesheet" />
+    <link href="./assets/css/committees.css" rel="stylesheet" />
+    <link href="./assets/css/logo.css" rel="stylesheet" />
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -68,115 +69,74 @@
         <div id="content">
 
         <!-- Jumbotron -->
-        <!-- TODO: Replace jumbotron committee in CSS with NEW BANNER-->
-        <div id="top-jumbotron-cfp" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper">
-            <div class="container px-4 py-5 text-center content">
-                <span class="d-flex justify-content-center align-items-center mt-5">
-                    <!-- TODO: Replace with new logo-->
-                    <img class="d-block my-0 mx-4" src="../assets/img/large/logo-large.png" alt="ASSETS'23 logo" width="125">
-                    <!-- <h1 class="display-4 confTitle mt-4 mb-0 mx-1">ASSETS 2023</h1> --> 
-                    <div>
-                        <h1 class="display-6 confTitle mt-4 mb-0">Program</h1>
-                        <!-- TODO: Replace with date-->
-                        <h5 class="confTitle">TBD</h5>
-                    </div>
-                </span>
-            </div>
+        <div
+          id="top-jumbotron-cfp"
+          class="jumbotron jumbotron-fluid text-light image-wrapper"
+        >
+          <div class="container px-4 py-4 text-center content">
+            <span
+              class="d-block justify-content-center align-items-center mt-5"
+            >
+              <div class="logo-wrapper tiles-only">
+                <script src="assets/js/logo.js"></script>
+              </div>
+              <div>
+                <h1 class="display-6 confTitle mt-4 mb-0">Program</h1>
+                <h5 class="confTitle">October 23-25, 2023</h5>
+              </div>
+            </span>
+          </div>
         </div>
         <!-- Jumbotron -->
 
+        <!-- TODO: Fill out with scheduled demo session information -->
+        <!-- Note: Leaving one as an example-->
         <section class="callout_section_2 p-3">
             <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-8 mt-4">
-                    <h3 class="text-center" tabindex="0">Poster Session 2</h3>
-                    <p>Jump to the Session Schedule for:</p>
-                    
-                    <ul>
-                        <li><b><a href="#posters">Posters</a></b></li>
-                        <li><b><a href="#sponsor-booth">Sponsor Booth</a></b></li>
-                        <li><b><a href="#src-posters">Student Research Competition Posters</a></b></li>
-                        <li><b><a href="#dc-posters">Doctoral Consortium Posters</a></b></li>
-                    </ul>
-
-                    <p>Jump back to <a href="program.html"><b>Full Program</b></a></p>
-
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- TODO: Fill out with scheduled session information -->
-        <section class="callout_section_1 p-3" id="posters">
-            <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-8 mt-4">
-                    <h3 class="text-center" tabindex="0">Posters</h3>
-                    <b>"I Should Feel Like I'm In Control": Understanding Expectations, Concerns, and Motivations for the Use of Autonomous Navigation on Wheelchairs</b>
+                    <h3 class="text-center" tabindex="0">Demo Session</h3>
+                    <br>
+                    <p>Jump back to <a href="detailed-program.html"><b>Full Program</b></a></p>
+                    <br>
+                    <b>A ToolKit of Approaches for Digital Mapping and Correction of Visual Distortion
+                        Supporting ASL Communication Between Hearing Parents and Deaf Children</b>
                     <ul class="authors">
-                        <li>JiWoong Jang, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li>
-                        <li>Yunzhi Li, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li>
-                        <li>Patrick Carrington, Human-Computer Interaction Institute, Carnegie Mellon University, Pittsburgh, Pennsylvania, United States</li>
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
                     </ul>
-                    <b>(virtual) "What Makes Sonification User-Friendly?" Exploring Usability and User-Friendliness of Sonified Responses</b>
+                    <b>Manipulation by Ocular Operations for Real-time Effect (MOORE): A Concise and 
+                        User-Friendly Method for Eye-Based Interaction</b>
                     <ul class="authors">
-                        <li>Ather Sharif, Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, Washington, United States</li>
-                        <li>Olivia Wang, Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, Washington, United States</li>
-                        <li>Alida Muongchan, Human Centered Design and Engineering, University of Washington, Seattle, Washington, United States</li>
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
                     </ul>
-                    
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- TODO: Fill out with sponsor information -->
-        <section class="callout_section_0 p-3" id="sponsor-booth">
-            <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-8 mt-4">
-                    <h3 class="text-center" tabindex="0">Sponsor Booth</h3>
-                    <p>Google's Sponsor Booth</p>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- TODO: Fill out with student research competition -->
-        <section class="callout_section_1 p-3" id="src-posters">
-            <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-8 mt-4">
-                    <h3 class="text-center" tabindex="0">Student Research Competition Posters</h3>
-                    <b>(virtual) Challenges and Opportunities in Creating An Accessible Web Application for Learning Organic Chemistry</b>
-                    <br><br>
-                    </div>
-            </div>
-            </div>
-        </section>
-
-
-        <!-- TODO: Fill out with doctoral consortium posters information -->
-        <section class="callout_section_2 p-3" id="dc-posters">
-            <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-8 mt-4">
-                    <h3 class="text-center" tabindex="0">Doctoral Consortium Posters</h3>
-                    
-                    <!-- TODO: Fill out with mentors -->
-                    <h3>Mentors</h3>
-                    <ul>
-                        <li>Cynthia Bennett</li>
-                        
-                    </ul>
-                    <b>Accessible PDFs: Applying Artificial Intelligence for Automated Remediation of STEM PDFs</b>
+                    <b>Testaro: Efficient Ensemble Testing for Web Accessibility</b>
                     <ul class="authors">
-                        <li>Felix Maximilian Schmitt-Koopmann</li>
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
+                    </ul>
+                    <b>Deploying VizLens: Characterizing User Needs, Preferences, and Challenges of 
+                        Physical Interfaces Usage in the Wild</b>
+                    <ul class="authors">
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
+                    </ul>
+                    <b>A Demonstration of RASSAR : Room Accessibility and Safety Scanning in 
+                        Augmented Reality</b>
+                    <ul class="authors">
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
+                    </ul>
+                    <b>BusStopCV: A Real-time AI Assistant for Labeling Bus Stop Accessibility Features 
+                        in Streetscape Imagery</b>
+                    <ul class="authors">
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
+                    </ul>
+                    <b>Sign Spotter: Design and Initial Evaluation of an Automatic Video-based American 
+                        Sign Language Dictionary System</b>
+                    <ul class="authors">
+                        <!-- <li>Daniel Andreas, Institute of Autonomous Systems and Mechatronics, Friedrich-Alexander-Universität Erlangen-Nürnberg, Erlangen, Germany</li> -->
                     </ul>
                     
 
                     <br>
-                    <p>[Jump back to <a href="program.html"><b>Full Program</b></a>]</p>
+                    <p>[Jump back to <a href="detailed-program.html"><b>Full Program</b></a>]</p>
                 </div>
             </div>
             </div>
@@ -185,7 +145,7 @@
         <div id="footer"></div>
         <script>
         $(function(){
-          $("#footer").load("../footer.html");
+          $("#footer").load("footer.html");
         });
         </script>
         <script type="text/javascript">
