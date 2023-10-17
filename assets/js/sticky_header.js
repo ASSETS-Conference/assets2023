@@ -1,6 +1,6 @@
 function set_sticky(scroll, query, sticky_class, offset = 0) {
     let elements = $(`${query}:not(.${sticky_class})`);
-    let el_height = $(elements[0]).outerHeight();
+    // let el_height = $(elements[0]).outerHeight();
 
     let locations = getStartingLocations(elements);
 
@@ -8,7 +8,7 @@ function set_sticky(scroll, query, sticky_class, offset = 0) {
 
     let sticky = toggleSticky(elements, sticky_index, sticky_class);
     if (sticky != null) {
-        setOffsets(elements, locations, sticky, sticky_index, scroll, offset);
+        setOffsets(elements, locations, sticky_class, sticky_index, scroll, offset);
     }
     
     return sticky.outerHeight();
@@ -60,11 +60,12 @@ function toggleSticky(elements, sticky_index, sticky_class) {
     return sticky;
 }
 
-function setOffsets(elements, locations, sticky, sticky_index, scroll, x_offset) {
+function setOffsets(elements, locations, sticky_class, sticky_index, scroll, x_offset) {
     let left_offset = elements.offset().left;
-    let sticky_height = sticky.outerHeight();
+    var sticky = $(`.${sticky_class}`);
     sticky.css("paddingLeft", left_offset);
     sticky.css("paddingRight", left_offset);
+    let sticky_height = sticky.outerHeight();
 
     sticky.css("top", x_offset);
     if (sticky_index != locations.length - 1) {
@@ -78,7 +79,7 @@ function setOffsets(elements, locations, sticky, sticky_index, scroll, x_offset)
             var add_x_offset = x_offset * 2;
         }
 
-        if (scroll + add_x_offset + x_offset + sticky_height > next_location) {
+        if (scroll + add_x_offset + x_offset + sticky_height >= next_location) {
             x_offset = Math.floor(-(sticky_height + add_x_offset + scroll - next_location));
             sticky.css("top", x_offset);
         }
@@ -109,7 +110,6 @@ function setBackToTop(scroll) {
     let footer = $("#footer");
     if (footer.isInViewport()) {
         let offset = scroll + $(window).height() - footer.offset().top;
-        console.log(offset);
         stickyBackToTop.css("bottom", `${offset}px`);
     } else {
         stickyBackToTop.css("bottom", "0");
@@ -120,21 +120,20 @@ function adjustHeaders() {
     let scroll = $(window).scrollTop();
     date_offset = set_sticky(scroll, ".program-date", "sticky-date");
     set_sticky(scroll, ".detailed-program h3", "sticky-heading", date_offset);
-    setBackToTop(scroll);
 }
 
 function addScroll(e) {
-    let offset = $(".detailed-program h3").outerHeight();
+    // let offset = $(".detailed-program h3").
     e.preventDefault();
-    let scroll = $(window).scrollTop();
     target_el = $($(this).attr("href"));
-    target_location = target_el.offset().top;
+    let offset = target_el.siblings(".program-date").outerHeight();
+    console.log(offset);
+    target_location = target_el.children(":first").offset().top;
     $(window).scrollTop(target_location - offset);
 }
 
 $(document).ready(function () {
     $(window).on("scroll", adjustHeaders);
     $(window).on("resize", adjustHeaders);
-    console.log($(".program-overview"));
     $(".program-overview a").on("click", addScroll);
 });
