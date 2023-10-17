@@ -727,7 +727,7 @@ table td {
 }
 
 .td-buffered {
-  background-color: #efeff0;
+  /* background-color: #efeff0; */
   /* make this smaller to leave gap */
   height: 100%;
   padding: 5px 15px 0 10px;
