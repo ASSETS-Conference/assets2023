@@ -733,8 +733,12 @@ table td {
   padding: 5px 15px 0 10px;
 }
 
-.td-offset {
+.td-offset-15 {
   padding-top: 20px;
+}
+
+.td-offset-30 {
+  padding-top: 40px;
 }
 
 .back-to-top {
@@ -901,7 +905,7 @@ span button {
 .program-overview table tbody th {
   white-space: nowrap;
   padding-right: 1rem;
-  min-width: 6rem;
+  min-width: 9rem;
 }
 
 .program-overview h3 {
