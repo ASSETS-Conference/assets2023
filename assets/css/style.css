@@ -991,7 +991,7 @@ span button {
 .sticky-date, .sticky-heading {
   position: fixed;
   /* width: 100vw; */
-  max-width: 90vw;
+  max-width: 100vw;
   left: 0;
   right: 0;
   /* padding-left: 1rem !important; */

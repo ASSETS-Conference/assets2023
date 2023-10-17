@@ -34,21 +34,25 @@ function toggleSticky(elements, sticky_index, sticky_class) {
     let sticky = $(`.${sticky_class}`);
 
     if (sticky_index != null) {
-        let el = $(elements[sticky_index]);
-        let new_sticky_id = `${sticky_class}-${sticky_index}`;
-
-        if (sticky != null) {
-            var curr_sticky_id = $(sticky).attr("id");
-        }
-
-        if (curr_sticky_id != new_sticky_id) {
+        let new_sticky = $(elements[sticky_index]);
+        if (sticky != new_sticky) { 
             sticky.remove();
 
-            sticky = el.clone();
+            sticky = new_sticky.clone();
             sticky.addClass(sticky_class);
-            sticky.attr("id", new_sticky_id);
-            el.parent().prepend(sticky);
-        }
+            // sticky.attr("id", new_sticky_id);
+            new_sticky.parent().prepend(sticky);
+            // console.log(el.parent());
+        };
+        // let new_sticky_id = `${sticky_class}-${sticky_index}`;
+
+        // if (sticky != null) {
+        //     var curr_sticky_id = $(sticky).attr("id");
+        // }
+
+        // if (curr_sticky_id != new_sticky_id) {
+            
+        // }
     } else {
         sticky.remove();
     }
@@ -60,6 +64,7 @@ function setOffsets(elements, locations, sticky, sticky_index, scroll, x_offset)
     let left_offset = elements.offset().left;
     let sticky_height = sticky.outerHeight();
     sticky.css("paddingLeft", left_offset);
+    sticky.css("paddingRight", left_offset);
 
     sticky.css("top", x_offset);
     if (sticky_index != locations.length - 1) {
@@ -70,7 +75,7 @@ function setOffsets(elements, locations, sticky, sticky_index, scroll, x_offset)
         var add_x_offset = 0;
 
         if (sticky.parent().parent().get(0) != next_el.parent().parent().get(0)) {
-            var add_x_offset = x_offset;
+            var add_x_offset = x_offset * 2;
         }
 
         if (scroll + add_x_offset + x_offset + sticky_height > next_location) {
@@ -111,10 +116,25 @@ function setBackToTop(scroll) {
     }
 }
 
-$(window).scroll(function () {
+function adjustHeaders() {
     let scroll = $(window).scrollTop();
     date_offset = set_sticky(scroll, ".program-date", "sticky-date");
     set_sticky(scroll, ".detailed-program h3", "sticky-heading", date_offset);
     setBackToTop(scroll);
-});
+}
 
+function addScroll(e) {
+    let offset = $(".detailed-program h3").outerHeight();
+    e.preventDefault();
+    let scroll = $(window).scrollTop();
+    target_el = $($(this).attr("href"));
+    target_location = target_el.offset().top;
+    $(window).scrollTop(target_location - offset);
+}
+
+$(document).ready(function () {
+    $(window).on("scroll", adjustHeaders);
+    $(window).on("resize", adjustHeaders);
+    console.log($(".program-overview"));
+    $(".program-overview a").on("click", addScroll);
+});
