@@ -661,6 +661,7 @@ table td {
   padding-top: 5px;
 }
 
+
 /* Rest of Table */
 .program-overview td {
   border-bottom: none;
@@ -706,8 +707,8 @@ table td {
   /*#65446D;*/
 }
 
-.tr-bottom-border {
-  border-bottom: #ececf9 solid 1px;
+.td-bottom-border {
+  border-bottom: 2px solid #ececf9 !important;
 }
 
 .tr-gray {
