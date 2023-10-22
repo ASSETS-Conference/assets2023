@@ -120,6 +120,7 @@ function adjustHeaders() {
     let scroll = $(window).scrollTop();
     date_offset = set_sticky(scroll, ".program-date", "sticky-date");
     set_sticky(scroll, ".detailed-program h3", "sticky-heading", date_offset);
+    setBackToTop(scroll);
 }
 
 function addScroll(e) {
